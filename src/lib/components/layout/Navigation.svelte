@@ -3,11 +3,11 @@
   import ThemeToggle from './ThemeToggle.svelte';
 </script>
 
-<nav class="bg-cat-mantle shadow-lg border-b border-cat-surface0">
+<nav class="sticky top-0 z-50 bg-cat-mantle shadow-lg border-b border-cat-surface0">
   <div class="container mx-auto px-4">
     <div class="flex justify-between items-center h-16">
       <div class="flex items-center space-x-8">
-        <a href="/" class="text-xl font-bold text-cat-blue">JWT PQ Benchmark</a>
+        <a href="/" class="text-xl font-bold text-cat-blue">E259604</a>
         <div class="hidden md:flex space-x-4">
           <a 
             href="/" 
@@ -39,3 +39,6 @@
     </div>
   </div>
 </nav>
+
+<!-- Spacer div to create space after navigation -->
+<div class="h-8"></div>
