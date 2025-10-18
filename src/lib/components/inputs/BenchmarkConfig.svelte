@@ -8,7 +8,7 @@
   } = $props();
 </script>
 
-<div class="space-y-4 p-4 bg-cat-surface0 rounded-lg">
+<div class="space-y-4 p-4 bg-cat-surface0 rounded-lg border border-cat-overlay0">
   <div>
     <label class="block text-sm font-medium mb-2 text-cat-text">
       Iterations: <span class="font-bold text-cat-blue">{iterations}</span>
@@ -50,9 +50,9 @@
       {#each ['small', 'medium', 'large'] as size}
         <button
           onclick={() => payloadSize = size as PayloadSize}
-          class="px-4 py-2 rounded-lg flex-1 transition-all {payloadSize === size 
-            ? 'bg-cat-blue text-white' 
-            : 'bg-cat-surface1 text-cat-text hover:bg-cat-surface2'}"
+          class="px-4 py-2 rounded-lg flex-1 transition-all border {payloadSize === size 
+            ? 'bg-cat-blue text-white border-cat-lavender' 
+            : 'bg-cat-surface1 text-cat-text border-cat-overlay0 hover:bg-cat-surface2 hover:border-cat-overlay1'}"
         >
           {size.charAt(0).toUpperCase() + size.slice(1)}
         </button>

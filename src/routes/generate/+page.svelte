@@ -56,13 +56,13 @@
       <AlgorithmSelector bind:selected={selectedAlgorithm} multiple={false} />
       <PayloadEditor bind:claims />
       
-      <button
-        onclick={handleGenerate}
-        disabled={loading || selectedAlgorithm.length === 0}
-        class="w-full py-3 px-6 bg-green-500 text-white rounded-lg hover:bg-green-600 disabled:bg-gray-400 transition-colors"
-      >
-        {loading ? 'Generating...' : 'Generate Token'}
-      </button>
+			<button
+				onclick={handleGenerate}
+				disabled={loading || selectedAlgorithm.length === 0}
+				class="w-full py-3 px-6 bg-cat-green text-white rounded-lg border border-cat-teal hover:bg-cat-teal disabled:bg-cat-overlay0 disabled:border-cat-surface2 transition-colors"
+			>
+				{loading ? 'Generating...' : 'Generate Token'}
+			</button>
       
       {#if error}
         <div class="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">

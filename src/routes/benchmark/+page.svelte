@@ -47,13 +47,13 @@
         bind:payloadSize 
       />
       
-      <button
-        onclick={handleBenchmark}
-        disabled={loading || selectedAlgorithms.length === 0}
-        class="w-full py-3 px-6 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
-      >
-        {loading ? 'Running Benchmark...' : 'Run Benchmark'}
-      </button>
+			<button
+				onclick={handleBenchmark}
+				disabled={loading || selectedAlgorithms.length === 0}
+				class="w-full py-3 px-6 bg-cat-blue text-white rounded-lg border border-cat-lavender hover:bg-cat-sapphire disabled:bg-cat-overlay0 disabled:border-cat-surface2 disabled:cursor-not-allowed transition-colors"
+			>
+				{loading ? 'Running Benchmark...' : 'Run Benchmark'}
+			</button>
       
       {#if error}
         <div class="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">

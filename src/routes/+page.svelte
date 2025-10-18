@@ -55,15 +55,15 @@
     {:else if $currentBenchmark}
       <div class="flex justify-between items-center mb-4">
         <h2 class="text-2xl font-semibold text-cat-text">Benchmark Results</h2>
-        <button
-          onclick={regenerateBenchmarks}
-          class="px-4 py-2 bg-cat-blue text-white rounded-lg hover:bg-cat-sapphire transition-colors flex items-center space-x-2"
-        >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-          </svg>
-          <span>Regenerate Benchmarks</span>
-        </button>
+				<button
+					onclick={regenerateBenchmarks}
+					class="px-4 py-2 bg-cat-blue text-white rounded-lg border border-cat-lavender hover:bg-cat-sapphire transition-colors flex items-center space-x-2"
+				>
+					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+					</svg>
+					<span>Regenerate Benchmarks</span>
+				</button>
       </div>
       
       {#if error}
@@ -87,12 +87,12 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
         </svg>
         <p class="text-cat-subtext0 mb-4">No benchmark data available</p>
-        <button 
-          onclick={regenerateBenchmarks}
-          class="px-6 py-3 bg-cat-blue text-white rounded-lg hover:bg-cat-sapphire transition-colors"
-        >
-          Run Initial Benchmark
-        </button>
+				<button 
+					onclick={regenerateBenchmarks}
+					class="px-6 py-3 bg-cat-blue text-white rounded-lg border border-cat-lavender hover:bg-cat-sapphire transition-colors"
+				>
+					Run Initial Benchmark
+				</button>
       </div>
     {/if}
   </div>

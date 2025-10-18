@@ -131,7 +131,7 @@
   });
 </script>
 
-<div class="bg-cat-mantle p-4 rounded-lg shadow-lg">
+<div class="bg-cat-mantle p-4 rounded-lg shadow-lg border border-cat-overlay0">
   <h3 class="text-lg font-semibold mb-4 text-cat-text">Performance vs Size Trade-off</h3>
   <div class="h-96">
     <canvas bind:this={canvas}></canvas>

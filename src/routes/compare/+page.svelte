@@ -54,16 +54,16 @@
     </div>
   </div>
   
-  <button
-    onclick={handleCompare}
-    disabled={loading}
-    class="w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 
-           {loading 
-             ? 'bg-cat-overlay0 text-cat-subtext0 cursor-not-allowed' 
-             : 'bg-gradient-to-r from-cat-mauve to-cat-pink text-white hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]'}"
-  >
-    {loading ? 'Comparing...' : 'Compare Algorithms'}
-  </button>
+	<button
+		onclick={handleCompare}
+		disabled={loading}
+		class="w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 border
+					 {loading 
+						 ? 'bg-cat-overlay0 text-cat-subtext0 border-cat-surface2 cursor-not-allowed' 
+						 : 'bg-gradient-to-r from-cat-mauve to-cat-pink text-white border-cat-lavender hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]'}"
+	>
+		{loading ? 'Comparing...' : 'Compare Algorithms'}
+	</button>
   
   {#if comparison}
     <div class="bg-cat-mantle rounded-lg shadow-lg overflow-hidden">

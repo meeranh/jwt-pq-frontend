@@ -139,7 +139,7 @@
 Overall Score: The average of all four metrics (Sign Speed, Verify Speed, Token Size, Key Efficiency), each normalized to 0-100 scale.`;
 </script>
 
-<div class="bg-cat-mantle p-4 rounded-lg shadow-lg">
+<div class="bg-cat-mantle p-4 rounded-lg shadow-lg border border-cat-overlay0">
   <div class="flex items-center space-x-2 mb-4">
     <h3 class="text-lg font-semibold text-cat-text">Algorithm Performance Comparison</h3>
     <Tooltip text={tooltipText} />

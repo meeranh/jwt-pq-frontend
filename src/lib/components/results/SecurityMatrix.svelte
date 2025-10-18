@@ -24,7 +24,7 @@
   const performanceTooltip = "Performance Score is calculated based on operations per second (signing speed) divided by 100. Higher scores indicate better performance.";
 </script>
 
-<div class="bg-cat-mantle p-4 rounded-lg shadow-lg">
+<div class="bg-cat-mantle p-4 rounded-lg shadow-lg border border-cat-overlay0">
   <h3 class="text-lg font-semibold mb-4 text-cat-text">Security vs Performance Matrix</h3>
   
   <div class="overflow-x-auto">

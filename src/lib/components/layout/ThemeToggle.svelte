@@ -8,7 +8,7 @@
 
 <button
   onclick={toggleTheme}
-  class="p-2 rounded-lg bg-cat-surface0 hover:bg-cat-surface1 transition-colors"
+  class="p-2 rounded-lg bg-cat-surface0 border border-cat-overlay0 hover:bg-cat-surface1 hover:border-cat-overlay1 transition-colors"
   aria-label="Toggle theme"
 >
   {#if $theme === 'light'}
