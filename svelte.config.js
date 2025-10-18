@@ -8,8 +8,17 @@ const config = {
       assets: 'build',
       fallback: 'index.html',
       precompress: false,
-      strict: true
-    })
+      strict: false
+    }),
+    prerender: {
+      handleHttpError: ({ path, referrer, message }) => {
+        // Ignore favicon errors
+        if (path === '/favicon.png' || path === '/favicon.ico') {
+          return;
+        }
+        throw new Error(message);
+      }
+    }
   }
 };
 

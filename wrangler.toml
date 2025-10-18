@@ -1,5 +1,0 @@
-name = "jwt-pq-frontend"
-compatibility_date = "2025-10-18"
-
-[site]
-bucket = "./build"
