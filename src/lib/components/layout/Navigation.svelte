@@ -3,7 +3,7 @@
   import ThemeToggle from './ThemeToggle.svelte';
 </script>
 
-<nav class="sticky top-0 z-50 bg-cat-mantle shadow-lg border-b border-cat-surface0">
+<nav class="sticky top-0 z-50 bg-cat-mantle shadow-lg border-b border-cat-surface0 backdrop-blur-md bg-opacity-100">
   <div class="container mx-auto px-4">
     <div class="flex justify-between items-center h-16">
       <div class="flex items-center space-x-8">
