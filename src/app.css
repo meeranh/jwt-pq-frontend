@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* Catppuccin Latte (Light Theme) */
+:root[data-theme="light"] {
+  /* Base colors */
+  --color-base: #eff1f5;
+  --color-mantle: #e6e9ef;
+  --color-crust: #dce0e8;
+  --color-surface0: #ccd0da;
+  --color-surface1: #bcc0cc;
+  --color-surface2: #acb0be;
+  
+  /* Text colors */
+  --color-text: #4c4f69;
+  --color-subtext0: #6c6f85;
+  --color-subtext1: #5c5f77;
+  
+  /* Overlay colors */
+  --color-overlay0: #9ca0b0;
+  --color-overlay1: #8c8fa1;
+  --color-overlay2: #7c7f93;
+  
+  /* Main colors */
+  --color-blue: #1e66f5;
+  --color-lavender: #7287fd;
+  --color-sapphire: #209fb5;
+  --color-sky: #04a5e5;
+  --color-teal: #179299;
+  --color-green: #40a02b;
+  --color-yellow: #df8e1d;
+  --color-peach: #fe640b;
+  --color-maroon: #e64553;
+  --color-red: #d20f39;
+  --color-mauve: #8839ef;
+  --color-pink: #ea76cb;
+  --color-flamingo: #dd7878;
+  --color-rosewater: #dc8a78;
+}
+
+/* Catppuccin Mocha (Dark Theme) */
+:root[data-theme="dark"] {
+  /* Base colors */
+  --color-base: #1e1e2e;
+  --color-mantle: #181825;
+  --color-crust: #11111b;
+  --color-surface0: #313244;
+  --color-surface1: #45475a;
+  --color-surface2: #585b70;
+  
+  /* Text colors */
+  --color-text: #cdd6f4;
+  --color-subtext0: #a6adc8;
+  --color-subtext1: #bac2de;
+  
+  /* Overlay colors */
+  --color-overlay0: #6c7086;
+  --color-overlay1: #7f849c;
+  --color-overlay2: #9399b2;
+  
+  /* Main colors */
+  --color-blue: #89b4fa;
+  --color-lavender: #b4befe;
+  --color-sapphire: #74c7ec;
+  --color-sky: #89dceb;
+  --color-teal: #94e2d5;
+  --color-green: #a6e3a1;
+  --color-yellow: #f9e2af;
+  --color-peach: #fab387;
+  --color-maroon: #eba0ac;
+  --color-red: #f38ba8;
+  --color-mauve: #cba6f7;
+  --color-pink: #f5c2e7;
+  --color-flamingo: #f2cdcd;
+  --color-rosewater: #f5e0dc;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
